@@ -1,0 +1,35 @@
+{
+  "name": "atom-cms",
+  "version": "1.0.0",
+  "description": "CMS on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx next start",
+    "dev": "npx next dev",
+    "build": "npx next build",
+    "lint": "npx next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovenmen/atom-cms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovenmen/atom-cms/issues"
+  },
+  "homepage": "https://github.com/ovenmen/atom-cms#readme",
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.37",
+    "@types/react-dom": "17.0.11",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
+}

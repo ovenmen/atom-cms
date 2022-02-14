@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Container, Grid } from '@mui/material';
 
 import ResponsiveAppBar from '../components/responsive-app-bar';
+import Post from '../components/post';
 
 const Home: FC = () => (
     <Container maxWidth="lg">
@@ -10,13 +11,16 @@ const Home: FC = () => (
                 <ResponsiveAppBar />
             </Grid>
             <Grid item xs={12}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta distinctio quam molestiae quos tempora minus odit ad veritatis deleniti cum itaque quibusdam tempore cupiditate harum modi atque, quaerat nobis hic.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab autem placeat, a expedita vero similique maxime eaque temporibus porro, labore modi tempora laborum corrupti repudiandae sed est saepe earum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatibus! Rem, temporibus obcaecati commodi dolores eius, repellendus, dolorum mollitia et alias ut consequuntur dignissimos! Rerum eveniet repellendus vero error provident?
+                <Grid container spacing={2}>
+                    {[0,1,2,3,4,5,6,7,8,9].map((post, index) => (
+                        <Grid item xs={12} sm={6} lg={3} md={4} key={index}>
+                            <Post key={index} />
+                        </Grid>
+                    ))}
+                </Grid>
             </Grid>
         </Grid>
     </Container>
-    
 );
 
 export default Home;

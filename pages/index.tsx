@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { Header } from 'semantic-ui-react';
+import Button from '@mui/material/Button';
 
 const Home: FC = () => (
-    <Header as='h1'>Главная страница</Header>
+    <Button variant="contained">Hello World</Button>
 );
 
 export default Home;

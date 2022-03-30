@@ -14,6 +14,12 @@ class AtomCMSDocument extends Document {
                     <Main />
                     <NextScript />
                 </body>
+
+                <style jsx>{`
+                    :root {
+                        font-family: 'Roboto', 'Open Sans', 'serif';
+                    }
+                `}</style>
             </Html>
         );
     }

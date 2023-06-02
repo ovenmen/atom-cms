@@ -7,6 +7,6 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({
     title
-}) => (
-    <h1 className="text-4xl">{title}</h1>
+}) =>  (
+    <h1 className="text-4xl text-center my-3">{title}</h1>
 );

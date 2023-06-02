@@ -1,12 +1,5 @@
-export interface Link {
-    title: string
-    href: string
-}
+import type { Config } from "../@types/config";
 
-export interface Config {
-    siteName: string
-    links?: Link[]
-}
 
 const defaultConfig: Config = {
     siteName: 'Atom CMS',

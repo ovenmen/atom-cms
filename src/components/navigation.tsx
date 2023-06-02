@@ -1,16 +1,9 @@
 import React from 'react';
 import type { FC } from 'react';
-
-interface Link {
-    title: string
-    href: string
-}
+import type { Config } from '../../@types/config';
 
 interface NavigationProps {
-    readonly config: {
-        siteName: string
-        links?: Link[]
-    }
+    readonly config: Config
 }
 
 export const Navigation: FC<NavigationProps> = ({
